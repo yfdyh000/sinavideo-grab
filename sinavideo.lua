@@ -755,7 +755,7 @@ wget.callbacks.write_to_warc = function(url, http_stat)
         ["url"]="https://s3.ivideo.sina.com.cn/" .. video_file_id .. "." .. extension,
         ["method"]="HEAD",
         ["headers"]={
-          ["user-agent"]="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+          ["User-Agent"]="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
         },
         ["redirect"]=false
       })
@@ -778,7 +778,7 @@ wget.callbacks.write_to_warc = function(url, http_stat)
                 ["url"]=url2,
                 ["method"]="HEAD",
                 ["headers"]={
-                  ["user-agent"]="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+                  ["User-Agent"]="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
                 },
                 ["redirect"]=false
               })
